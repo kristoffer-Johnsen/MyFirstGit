@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/1.3 Trafikklys/TL.css">
+</head>
+
+<body>
+    <button onclick="document.location='/index.HTML'">back to main</button> 
+    <div id="display" class="body"></div>
+    <div id="buttons"></div>
+    <!---->
+    <script>
+
+        // model --------------------------------------------------
+        let red = true;
+        let yellow = false;
+        let green = false;
+        let blinking;
+
+        // view ---------------------------------------------------
+
+        view()
+        viewbuttons()
+        function view()
+        {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div id="redlight"  class="light redoff redon"></div>
+            <div id="yellowlight" class="light yellowoff yellowon"></div>
+            <div id="greenlight" class="light greenoff greenon"></div>          
+        `
+            lightupdate();
+        }
+        function viewbuttons()
+        {
+            document.getElementById("buttons").innerHTML =/*HTML*/`
+                <button onclick="change('green')">grønt</button>
+                <button onclick="change('yellow')">gul feil</button>
+                <button onclick="change('red')">rødt</button>
+            
+            `
+        }
+        //controller ----------------------------------------------
+
+        function lightupdate()
+        {
+            if (red == true)
+            {
+                document.getElementById('redlight').classList.remove("redoff")
+            }
+            if (red == false)
+            {
+                document.getElementById('redlight').classList.add("redoff")
+            }
+            if (yellow == true)
+            {
+                document.getElementById('yellowlight').classList.remove("yellowoff")
+            }
+            if (yellow == false)
+            {
+                document.getElementById('yellowlight').classList.add("yellowoff")
+            }
+            if (green == true)
+            {
+                document.getElementById('greenlight').classList.remove("greenoff")
+            }
+            if (green == false)
+            {
+                document.getElementById('greenlight').classList.add("greenoff")
+            }
+        }
+        function change(color)
+        {
+            clearInterval(blinking);
+            if (color == "red") 
+            {
+                if (red == false)
+                {
+                    changetored();
+                }
+            }
+            if (color == "yellow")
+            {
+                green = false;
+                red = false;
+                blinking = setInterval(() =>
+                {
+                    yellow = !yellow;
+                    view();
+                }, 500);
+
+            }
+            if (color == "green")
+            {
+                changetogreen();
+            }
+        }
+        function changetored() 
+        {
+            if (red == false);
+            {
+                setTimeout(() => 
+                {
+                    yellow = true;
+                    green = false;
+                    view();
+
+                    setTimeout(() => 
+                    {
+                        red = true;
+                        yellow = false;
+                        green = false;
+                        view()
+                    }, 1000);
+                }, 800);
+            }
+        }
+        function changetogreen()
+        {
+            if (green == false && red == true)
+
+                setTimeout(() =>
+                {
+                    yellow = true;
+                    view();
+                    setTimeout(() =>
+                    {
+                        red = false;
+                        yellow = false
+                        green = true
+                        view()
+                        viewbuttons()
+                    }, 1000);
+                }, 800);
+
+            if (green == false && red == false) 
+            {
+                yellow = false
+                green = true;
+                view()
+            }
+        }
+    </script>
+
+</body>
+
+</html>

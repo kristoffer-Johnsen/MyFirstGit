@@ -1,0 +1,22 @@
+.mainbody {
+    margin: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main {
+    margin: 10px;
+    height: 100vh;
+    width:100vw;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+    text-align: center;
+}
+.mainbuttons{
+    margin: 5px;
+    min-height: 40px;
+    max-height: 50px;
+}

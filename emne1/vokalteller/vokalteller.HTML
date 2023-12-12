@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="display"></div>
+    <script>
+        // model
+
+        let input = "__"
+        let answer = "__";
+        view()
+
+        // view
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div>skriv inn en settning og trykk enter for å telle antall vokaler</div>
+            <input onchange=controller(this.value) type="text">
+            <div>${input} inneholder ${answer} vokaler</div>           
+        `;
+        }
+
+        //controller
+        function controller(element) {
+            let count = 0;
+            const vokals =
+                [
+                    "a", "e", "i",
+                    "o", "u", "y",
+                    "æ", "ø", "å"
+                ];
+            input = element;
+            for (let index = 0; index < element.length; index++) {
+                let bokstav = element.charAt(index);
+                if (vokals.includes(bokstav)) {
+                    count++
+                }
+            }
+            answer = count;
+            view()
+        }
+    </script>
+</body>
+
+</html>

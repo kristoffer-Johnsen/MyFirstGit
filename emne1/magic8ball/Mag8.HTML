@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: solid black 2px;
+            border-radius: 50%;
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            margin: 5px;
+        }
+
+        .window {
+            border: solid white 2px;
+            width: 125px;
+            height: 65px;
+            margin: 126px;
+            margin-top: 85px;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+
+            margin-bottom: 30px;
+            background-color: grey;
+        }
+
+        .button {
+            height: 50px;
+            width: 80px;
+            margin-left: 151px;
+            background-color: lightslategray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display"></div>
+    <script>
+        // model
+        let answer = "";
+        let number = null;
+        var possibleanswers =
+            [
+                "yes",
+                "looking good",
+                "definetly",
+                "It's likely",
+                "not likely",
+                "absolutely not",
+                "it's not looking good",
+                "no"
+            ];
+
+        // view
+        view();
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div class="main">
+                <div class="window">${answer}</div>
+                 <button class="button" onclick="controller()">press to get answer</button>              
+            </div>
+
+                <div id="test">${number}</div>`;
+
+        }
+
+        //controller
+        function controller() {
+            let tempnumber;
+            antirepeat();
+            answer = possibleanswers[number];
+            view();
+        }
+        function antirepeat() {
+            randomnumber()
+            while (tempnumber == number) {
+                randomnumber();
+            }
+            number = tempnumber
+
+        }
+        function randomnumber() {
+            tempnumber = Math.floor((Math.random() * 8));
+        }
+
+
+    </script>
+</body>
+
+
+</html>

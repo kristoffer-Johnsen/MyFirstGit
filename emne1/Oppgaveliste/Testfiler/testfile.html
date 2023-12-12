@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.animation-container {
+    width: 39.2px; /* Adjust to your sprite width */
+    height: 39.2px; /* Adjust to your sprite height */
+    overflow: hidden;
+}
+
+.sprite {
+    width: 392px; /* Adjust to your sprite width */
+    height: 784px; /* Adjust to your sprite height */
+}
+</style>
+</head>
+
+<body>
+ <div class="animation-container">
+        <div class="sprite"></div>
+    </div>
+    <button id="startAnimation">Start Animation</button>
+    <button id="stopAnimation">Stop Animation</button>
+</body>
+
+
+
+<script>
+
+const animationContainer = document.querySelector('.animation-container');
+const sprite = document.querySelector('.sprite');
+const startButton = document.getElementById('startAnimation');
+const stopButton = document.getElementById('stopAnimation');
+
+let frame = 0;
+let isAnimating = false;
+
+function updateSprite() {
+    const frameX = frame % 10;
+    const frameY = Math.floor(frame / 10);
+
+    const spriteWidth = 392; // Adjust to your sprite width
+    const spriteHeight = 784; // Adjust to your sprite height
+
+    const backgroundPositionX = -frameX * spriteWidth + 'px';
+    const backgroundPositionY = -frameY * spriteHeight + 'px';
+
+    sprite.style.backgroundPosition = `${backgroundPositionX} ${backgroundPositionY}`;
+}
+
+function startAnimation() {
+    if (!isAnimating) {
+        isAnimating = true;
+        animate();
+    }
+}
+
+function animate() {
+    frame = (frame + 1) % 20; // 20 frames in total
+    updateSprite();
+
+    if (isAnimating) {
+        requestAnimationFrame(animate);
+    }
+}
+
+function stopAnimation() {
+    isAnimating = false;
+}
+
+startButton.addEventListener('click', startAnimation);
+stopButton.addEventListener('click', stopAnimation);
+
+updateSprite(); // Initialize with the first frame
+
+</script>
+
+</html>

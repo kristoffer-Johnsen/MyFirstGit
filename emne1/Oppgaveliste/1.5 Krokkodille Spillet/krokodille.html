@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: burlywood;">
+    <button onclick="document.location='/index.HTML'">back to main</button> 
+    <div id="display"></div>
+
+    <button onclick="submit()">submit</button>
+    <button onclick="reset()">reset</button>
+    <!---->
+
+    <script>
+        "use strict";
+        // model --------------------------------------------------
+        let poeng = 0;
+        let tall1 = 0;
+        let tall2 = 0;
+        let inputfield = "";
+
+        // view ---------------------------------------------------
+        view()
+        function view()
+        {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div>Poengsum:${poeng}</div>
+            <img src="krokkodille.jpg">
+            <div>${tall1}</div>
+            <input id="noe" type="text">
+            <div>${tall2}</div>
+        `;
+        }
+
+        //controller ----------------------------------------------
+        function submit()
+        {
+            let svar = document.getElementById('noe').value
+
+            if (svar == "")
+            {
+                return;
+            }
+            if (tall1 > tall2 && svar == ">" || tall1 < tall2 && svar == "<" || tall1 == tall2 && svar == "=")
+            {
+                poeng++
+            }
+            else
+            {
+                poeng--
+            };
+
+            view();
+        }
+        function reset()
+        {
+            tall1 = Math.floor(Math.random() * 10) + 1;
+            tall2 = Math.floor(Math.random() * 10) + 1;
+            view();
+        }
+    </script>
+
+    </div>
+
+</html

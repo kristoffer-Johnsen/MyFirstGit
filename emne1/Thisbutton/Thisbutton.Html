@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainbody {
+            border: black solid 2px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            border-bottom: solid black 2px;
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        .keyboard {
+            font-size: xx-large;
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            text-align: center;
+            padding-bottom: 2%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div></div>
+    <div class="mainbody">
+        <div id="input" class="header"></div>
+        <div class="keyboard">
+            <div onclick="keystroke(this)">q</div>
+            <div onclick="keystroke(this)">w</div>
+            <div onclick=keystroke(this)>e</div>
+            <div onclick=keystroke(this)>r</div>
+            <div onclick=keystroke(this)>t</div>
+            <div onclick=keystroke(this)>y</div>
+            <div onclick=keystroke(this)>u</div>
+            <div onclick=keystroke(this)>i</div>
+            <div onclick=keystroke(this)>o</div>
+            <div onclick=keystroke(this)>p</div>
+            <div onclick=keystroke(this)>a</div>
+            <div onclick=keystroke(this)>s</div>
+            <div onclick=keystroke(this)>d</div>
+            <div onclick=keystroke(this)>f</div>
+            <div onclick=keystroke(this)>g</div>
+            <div onclick=keystroke(this)>h</div>
+            <div onclick=keystroke(this)>j</div>
+            <div onclick=keystroke(this)>k</div>
+            <div onclick=keystroke(this)>l</div>
+            <div onclick=keystroke(this)>ø</div>
+            <div onclick=keystroke(this)>æ</div>
+            <div onclick=keystroke(this)>z</div>
+            <div onclick=keystroke(this)>x</div>
+            <div onclick=keystroke(this)>c</div>
+            <div onclick=keystroke(this)>v</div>
+            <div onclick=keystroke(this)>b</div>
+            <div onclick=keystroke(this)>n</div>
+            <div onclick=keystroke(this)>m</div>
+            <div onclick=keystroke(this)>,</div>
+            <div onclick=keystroke(this)>.</div>
+            <div style="border: solid black 2px; height: 10px;" onclick=keystroke(this)> </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    head = document.getElementById('input')
+
+    function keystroke(element) {
+        head.innerHTML += element.innerHTML;
+    }
+    
+
+</script>
+
+</html>

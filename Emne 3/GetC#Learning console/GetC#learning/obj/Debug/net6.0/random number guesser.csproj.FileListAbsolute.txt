@@ -1,0 +1,14 @@
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\random number guesser.exe
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\random number guesser.deps.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\random number guesser.runtimeconfig.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\random number guesser.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\random number guesser.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.AssemblyInfoInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.AssemblyInfo.cs
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.csproj.CoreCompileInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\refint\random number guesser.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\random number guesser.genruntimeconfig.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\ref\random number guesser.dll

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bulb {
+        border: solid black 2px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgb(240, 240, 197);
+    }
+
+    .bulbottom {
+        border: solid grey 2px;
+        margin-left: 20px;
+        width: 60px;
+        height: 20px;
+        margin-top: -10px;
+        background-color: grey;
+    }
+
+    .light {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+   <button onclick="document.location='/index.HTML'">back to main</button> 
+    <div id="display"></div>
+    <div>-------------------</div>
+    <button onclick="controller()">on/off</button>
+
+    <script>
+        "use strict";
+        // view ---------------------------------------------------
+        view()
+        function view()
+        {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div id="lightbulb" class ="bulb"></div>
+            <div class ="bulbottom"></div>            
+        `;
+        }
+
+        //controller ----------------------------------------------
+        function controller()
+        {
+        document.getElementById('lightbulb').classList.toggle('light')
+        }
+
+    </script>
+
+</body>
+
+</html>

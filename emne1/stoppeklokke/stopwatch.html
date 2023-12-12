@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .col {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+        }
+
+        .bor {
+            border: 2px solid black;
+            margin-top: 10%;
+            width: 50%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .but1 {
+            width: 16%;
+            margin-left: 3px;
+        }
+
+        .but2 {
+            width: 50%;
+            margin-left: 2px;
+        }
+
+        .timerstyle {
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            border: solid black 2px;
+            margin-top: 5px;
+            width: 50%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .sec {
+            width: 25%;
+            padding: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body onload="placenumber()">
+
+    <div>
+
+        <div class="col">
+            <div id="count" class="timerstyle row">
+                <div class="row">
+                    <div id="min" class="sec"></div>
+                    <div>.</div>
+                    <div id="sec" class="sec"></div>
+                    <div>.</div>
+                    <div id="dec" class="sec"></div>
+                </div>
+            </div>
+            <div class="row">
+                <button onclick="start()" class="but1">start</button>
+                <button onclick="pause()" class="but1">pause</button>
+                <button onclick="stop()" class="but1">stop</button>
+            </div>
+            <button onclick="reset()" class="but2">reset</button>
+        </div>
+    </div>
+
+    <script>
+        let min = 0;
+        let sec = 0;
+        let number = 0;
+        let started = false;
+        let paused = false
+        function placenumber() {
+            if (paused == false) {
+                document.getElementById('min').innerHTML = min;
+                document.getElementById('sec').innerHTML = sec;
+                document.getElementById('dec').innerHTML = number;
+            }
+        }
+
+        function start() {
+            if (started == false) {
+                timer = setInterval(increasenumber, 95);
+                started = true
+            }
+        }
+        function stop() {
+            started = false
+            clearInterval(timer);
+        }
+        function pause() {
+            if (paused == false) {
+                paused = true;
+            }
+            else {
+                paused = false;
+            }
+        }
+        function reset() {
+            if (paused == false && started == false) {
+                number = 0;
+                min = 0;
+                sec = 0;
+                placenumber();}
+
+        }
+
+
+        function increasenumber() {
+            if (number == 9) {
+                increasesec()
+                number = 0
+                placenumber;
+            } else {
+                number++
+                placenumber();
+            }
+        }
+        function increasesec() {
+            if (sec == 59) {
+                sec = 0
+                min++;
+            }
+            else {
+
+                sec++
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.AssemblyInfoInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.AssemblyInfo.cs
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.csproj.CoreCompileInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\Emne3console.exe
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\Emne3console.deps.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\Emne3console.runtimeconfig.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\bin\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\refint\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\Emne3console.genruntimeconfig.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\random number guesser\random number guesser\obj\Debug\net6.0\ref\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.exe
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.deps.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.runtimeconfig.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfoInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfo.cs
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.csproj.CoreCompileInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\refint\Emne3console.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.genruntimeconfig.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\ref\Emne3console.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfoInputs.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfo.cs
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.csproj.CoreCompileInputs.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\refint\Emne3console.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.exe
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.deps.json
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.runtimeconfig.json
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.pdb
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.genruntimeconfig.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\ref\Emne3console.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.sourcelink.json

@@ -1,0 +1,14 @@
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.exe
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.deps.json
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.runtimeconfig.json
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.pdb
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.AssemblyInfoInputs.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.AssemblyInfo.cs
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.csproj.CoreCompileInputs.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\refint\codealong.dll
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.pdb
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.genruntimeconfig.cache
+C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\ref\codealong.dll

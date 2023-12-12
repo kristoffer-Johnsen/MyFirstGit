@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+  
+
+    <!---->
+    <script>
+        // model --------------------------------------------------
+        let numbers = [];
+        let result =0;
+
+
+        // view ---------------------------------------------------
+        view()
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div>${result}</div>
+            <div>${numbers}</div>
+            <button onclick="callculate()"></button>
+            <button onclick="addnumbers()">dtgfyjk</button>
+        `;
+        }
+
+        //controller ----------------------------------------------
+        function callculate() {
+            
+            for (let index = 0; index < numbers.length; index++) {
+                const element = numbers[index];
+                if (element >= 20) {
+                    result += element
+                }
+            }
+            view();
+        }
+       function addnumbers() {       
+        while (numbers.length<10) {
+            numbers.push(Math.floor(Math.random() * 100) + 1)
+        }
+        view()
+    }
+
+
+
+    </script>
+
+</body>
+
+</html>

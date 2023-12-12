@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="document.location='/index.HTML'">back to main</button>
+    <div id="time"></div>
+    <div id="divbuttons"></div>
+    <div id="saved"></div>
+
+</body>
+
+<script>
+
+    // model--------------------------------------------------
+    let minute = 0;
+    let second = 0;
+    let deci = 0;
+    let started = false;
+    let saveddiv = document.getElementById('saved')
+    let timer = document.getElementById('time')
+    let buttons = document.getElementById('divbuttons')
+
+    // view---------------------------------------------------
+    viewtimer()
+    buttonview()
+    function viewtimer()
+    {
+        timer.innerHTML =/*HTML*/`
+        <div>${minute}:${second}.${deci}0</div>`
+    }
+
+    function buttonview()
+    {
+        buttons.innerHTML =/*HTML*/`
+        <button onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="save()">Save</button>
+        <button onclick="reset()">Reset</button>`
+    }
+
+    // controller---------------------------------------------
+
+    function start()
+    {
+        if (started == false)
+        {
+            started = true;
+            intervalname = setInterval(running, 100);
+        }
+    }
+    function stop()
+    {
+        started = false;
+        clearInterval(intervalname)
+    }
+
+    function save()
+    {
+        saveddiv.innerHTML += /*HTML*/`<div>${minute}.${second}.${deci}</div>`
+    }
+
+    function reset()
+    {
+        if (started == false)
+        {
+            minute = 0;
+            second = 0;
+            deci = 0;
+            saveddiv.innerHTML = "";
+            viewtimer();
+        }
+        else return
+    }
+
+    function running()
+    {
+        if (second == 59)
+        {
+            minute++;
+            second = 0;
+        }
+        else if (deci == 9)
+        {
+            second++;
+            deci = 0;
+        }
+        else
+        {
+            deci++;
+        }
+        viewtimer()
+    }
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+.body {
+    border: solid black 2px;
+    background-color: darkgrey;
+    height: 300px;
+    width: 150px;
+    border-radius: 5%;
+}
+
+.light {
+    border: solid gray;
+    margin-top: 18px;
+    margin-left: 35px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.redon {
+    background-color: rgb(201, 25, 25);
+}
+
+.yellowon {
+    background-color: yellow;
+}
+
+.greenon {
+    background-color: yellowgreen;
+}
+
+.redoff {
+    background-color: rgb(245, 204, 204);
+}
+
+.yellowoff {
+background-color: rgb(199, 199, 158);
+}
+
+.greenoff {
+background-color: rgb(173, 185, 155) ;
+}

@@ -1,0 +1,14 @@
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\bin\Debug\net6.0\PP Kristoffer  & Simon.exe
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\bin\Debug\net6.0\PP Kristoffer  & Simon.deps.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\bin\Debug\net6.0\PP Kristoffer  & Simon.runtimeconfig.json
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\bin\Debug\net6.0\PP Kristoffer  & Simon.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\bin\Debug\net6.0\PP Kristoffer  & Simon.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.AssemblyInfoInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.AssemblyInfo.cs
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.csproj.CoreCompileInputs.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\refint\PP Kristoffer  & Simon.dll
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.pdb
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\PP Kristoffer  & Simon.genruntimeconfig.cache
+C:\Users\kris_\Desktop\Repo\soloprojects\Emne 3\PP Kristoffer  & Simon\obj\Debug\net6.0\ref\PP Kristoffer  & Simon.dll

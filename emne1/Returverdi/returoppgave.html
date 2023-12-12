@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="maindiv"></div>
+    <button onclick="createandshowhtml('green','hallo verden', 30, 500)">test1</button>
+    <button onclick="createandshowhtml('gray','hei på degn', 20, 300)">test2</button>
+    <button onclick="createandshowhtml('yello','Getacademy', 10, 150 )">test3</button>
+
+    <script>
+
+        function createandshowhtml(color, text, fontsize, boxsize) {
+            document.getElementById('maindiv').innerHTML = `
+            <div ${createstyle(color, fontsize, boxsize)}>${text}</div>`
+                ;
+        }
+
+        function createstyle(color, fontsize, boxsize) {
+            return `style="${createbackgroundcolor(color)} ${createfontsize(fontsize)} ${createborder(boxsize)}"`
+                ;
+        }
+
+        function createbackgroundcolor(color) {
+            return `background-color: ${color};`
+                ;
+        }
+
+        function createfontsize(fontsize) {
+            return `font-size:${fontsize}px;`
+                ;
+        }
+        function createborder(boxsize) {
+            return `border:solid black 4px;
+            width:${boxsize}px;
+            height:${boxsize}px;`
+                ;
+        }
+
+    </script>
+</body>
+
+</html>

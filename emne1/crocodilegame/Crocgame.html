@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            font-size: x-large;
+        }
+
+        .x-large {
+            font-size: x-large;
+            width: 100px;
+        }
+
+        .xx-large {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body id="game" onload="displaygame()">
+
+    <script>
+
+        let display = document.getElementById('game');
+        let points = 0;
+        let number1 = 0;
+        let number2 = 0;
+
+        randomnumber();
+
+        function displaygame() {
+            display.innerHTML =/*HTML*/`
+            <div class ="main">
+                <div id="counter" class="xx-large">Poeng:${points}</div>
+                <div><img src="image/Krokodillespill (1).png" alt=""></div>
+                    
+                <div class="xx-large">${number1}</div>
+                    <input id="inputfield" class="x-large" type="text">
+                <div class="xx-large">${number2}</div>
+                
+                <button class="x-large" onclick="submit2()">Submit</button>
+                <button class="x-large" onclick="">Reset</button>
+            </div>
+        `;
+        }
+
+        function randomnumber() {
+            number1 = Math.floor(Math.random() * 10);
+            number2 = Math.floor(Math.random() * 10);
+        }
+
+        function submit2() {
+            let answer = document.getElementById('inputfield')
+            if (answer.value == ">" && number1 > number2 || answer.value == "<" && number1 < number2 || answer.value == "=" && number1 == number2) {
+                points++;
+            }
+            else {
+                points--;
+            }
+            randomnumber();
+            displaygame();
+        }
+
+    </script>
+</body>
+
+</html>

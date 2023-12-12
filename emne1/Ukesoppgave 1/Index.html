@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .light {
+            background-color: white;
+            color: black;
+        }
+
+        .dark {
+            background-color: rgb(34, 34, 36);
+            color: white;
+        }
+
+        .lay1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cent {
+            align-items: center;
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+
+        .bor {
+            border: 1px solid black;
+            width: 100%;
+
+        }
+
+        .reset {
+            all: revert;
+        }
+    </style>
+
+
+</head>
+
+
+<body id="one">
+
+    <button onclick="theme()">darkmode</button>
+
+    <div class="lay1 cent bor">
+        <div class="lay1 cent bor">
+
+            <H1>Kristoffer Johnsen</H1>
+
+            <h3 class="bor">om meg</h3>
+
+            <div class="left">
+                <li>Alder:33 år</li>
+                <li>Sivilstatus:samboer</li>
+                <li>utdannelse:automatiker</li>
+            </div>
+            <div><img src="/bilde/Skjermbilde 2023-08-18 141722.png" alt="">
+            </div>
+
+
+        </div>
+
+
+        <script>
+
+            let darkmode = false
+
+            function theme()/*HTML*/ {
+                if (darkmode == true) {
+                    document.getElementById('one').classList = [];
+                    document.getElementById('one').classList.add('light');
+                    darkmode = false
+                }
+                else {
+                    document.getElementById('one').classList = [];
+                    document.getElementById('one').classList.add('dark');
+                    darkmode = true
+                }
+            }
+
+        </script>
+</body>
+
+</html>

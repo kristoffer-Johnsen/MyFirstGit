@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="document.location='/index.HTML'">back to main</button> 
+    <div id="display"></div>
+    <button onclick="addword(this.innerHTML)">knappene</button>
+    <button onclick="addword(this.innerHTML)">fylle</button>
+    <button onclick="addword(this.innerHTML)">tommrommene</button>
+    <br>
+    <button onclick="restart()">Restart</button>
+
+    <!---->
+    <script>
+        // model --------------------------------------------------
+        let word = ["___", "___", "___"]
+
+        // view ---------------------------------------------------
+        view()
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+         
+            <div>trykk på ${word[0]} for å ${word[1]} ut ${word[2]} </div>            
+        `;
+        }
+
+        //controller ----------------------------------------------
+        function addword(para) {
+            if (word.includes("___")) {
+                word.splice(word.indexOf("___"), 1, para)
+            }
+            view();
+        }
+        
+        function restart() {
+            location.reload();
+        }
+    </script>
+
+</body>
+
+</html>

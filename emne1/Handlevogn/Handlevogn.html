@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="display"></div>
+    <script>
+        // model
+        let counter = 0;
+        let shoppingcart = [];
+        let selected = [];
+        let wares =
+            [
+                "Earphones", "Keyboard", "Speaker",
+                "Microphone", "Tv", "Printer",
+            ];
+        view()
+        // view
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <div id="vareliste"></div>
+            <div>    
+                <h1>Selected</h1>
+                <div id=selected></div>                         
+                <button onclick=addtoshoppingcart()>legg til i shoppingcart</button>
+            </div>          
+            <div><H1>Shoppingcart</h1>
+                <div>${shoppingcart}</div>                       
+            </div>
+        `;
+            listofwares()
+            listofselected()
+        }
+
+        //controller
+        function listofwares() {
+            for (let index = 0; index < wares.length; index++) {
+                document.getElementById('vareliste').innerHTML +=/*html*/`
+                <div onclick=addtoselected(this.innerHTML)>${wares[index]}</div>`
+            }
+        }
+        function listofselected() {
+           let number=getnumber();
+            for (let index = 0; index < selected.length; index++) {
+                document.getElementById('selected').innerHTML +=/*html*/`
+                <div onclick=remove(this.innerHTML)>${selected[index]}  <button></button>${number}<button></button></div>`
+            }
+}
+
+        function getnumber(){
+            
+        }
+
+
+        function addtoselected(element) {
+            selected.push(element);
+            view();
+        }
+        function remove(element) {
+            let removethis = selected.indexOf(element);
+            selected.splice(removethis, 1);
+            view();
+        }
+        function addtoshoppingcart() {
+
+        }
+
+
+    </script>
+</body>
+
+</html>

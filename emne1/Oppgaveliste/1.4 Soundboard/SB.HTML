@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="document.location='/index.HTML'">back to main</button> 
+    <div id="display"></div>
+    <audio id="audioElement"></audio>
+    <!---->
+    <script>
+        "use strict";
+        // model --------------------------------------------------
+        let sounds =
+            [
+                { name: 'bubbles', link: '/1.4 Soundboard/Audiofiler/bubbles.mp3' },
+                { name: 'clay', link: '/1.4 Soundboard/Audiofiler/clay.mp3' },
+                { name: 'confetti', link: '/1.4 Soundboard/Audiofiler/confetti.mp3' },
+                { name: 'glimmer', link: '/1.4 Soundboard/Audiofiler/glimmer.mp3' },
+                { name: 'moon', link: '/1.4 Soundboard/Audiofiler/moon.mp3' },
+                { name: 'ufo', link: '/1.4 Soundboard/Audiofiler/ufo.mp3' },
+            ]
+
+        // view ---------------------------------------------------        
+        view()
+        function view()
+        {
+            const mainview = document.getElementById("display");
+            for (let index = 0; index < sounds.length; index++)
+            {
+                const element = sounds[index];
+                mainview.innerHTML += `
+                    <button onclick="playAudio(${index})">${element.name}</button>
+                `;
+            }
+        }
+        // Controller ----------------------------------------------
+        function playAudio(index)
+        {
+            const audioElement = document.getElementById('audioElement');
+            audioElement.src = sounds[index].link;
+            audioElement.play();
+        }
+
+    </script>
+
+</body>
+
+</html>

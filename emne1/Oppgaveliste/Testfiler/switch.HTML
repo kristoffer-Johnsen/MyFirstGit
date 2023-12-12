@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+
+    <div></div>
+    <button onclick="updateview()">updateview</button>
+    <!---->
+
+    <script>
+        "use strict";
+        const model =
+        {
+            app:
+            {
+                currentUser: '',
+                currentPage: 'Profile', // main / trails / profile / users / login
+                admin: '',
+            },
+        }
+
+        const display1 = document.getElementById("display");
+        function updateview()
+        {
+            // getHTML_header();
+            const hvasomhelst = model.app.currentPage;
+            switch (hvasomhelst)
+            {
+                case 'Main':
+                    console.log('switch result:Main')
+                    viewMain();
+                    break;
+                case 'Profile':
+                    console.log('switch result:Profile')
+                    profileView();
+                    break;
+                case 'Login':
+                    loginSide()
+                    console.log('switch result:Login')
+                    g
+                case 'Trips':
+                    getHTML_turViewMode();
+                    console.log('switch result:Trips')
+                    break;
+                default:
+                    console.log('switch result:default')
+                    break;
+            }
+        }
+
+        function viewMain()
+        {
+            display1.innerHTML =/*HTML*/ `
+             <button>main</button> <button>main</button> <button>main</button>`;
+        }
+
+        function viewprofile()
+        {
+            display1.innerHTML =/*HTML*/ `
+             <button>Profile</button> <button>Profile</button> <button>Profile</button>`;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

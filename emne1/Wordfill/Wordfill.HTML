@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="display">dfg</div>
+
+
+    <script>
+        // model  
+        let word1 = "____";
+        let word2 = "____";
+        let word3 = "____";
+
+
+        // view
+        view();
+        function view() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            write ${word1} in these ${word2} fields by ${word3} the buttons
+            <button onclick=words(word1,'something')>something</button>
+            <button>blank</button>
+            <button>clicking</button>
+
+        `
+        }
+
+        //controller
+        function words(para1, para2) {
+            para1 = para2;
+        view();
+        }
+
+    </script>
+</body>
+
+</html>

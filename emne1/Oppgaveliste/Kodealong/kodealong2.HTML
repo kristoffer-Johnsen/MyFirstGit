@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="display"></div>
+
+    <!---->
+    <script>
+        // model --------------------------------------------------
+        let number;
+        let answer = '';
+        let guess;
+    
+        // view ---------------------------------------------------
+        updateview();
+        getnumber(100);
+        function updateview() {
+            document.getElementById("display").innerHTML =/*HTML*/`
+            <input onchange="guess=this.value" type="number">
+            <button onclick="controller()">Guess number</button>
+            <div>${answer}</div>
+        `;
+        }
+
+        //controller ----------------------------------------------
+        function controller() {
+            if (guess < number) {
+                answer = 'number is higher';
+            }
+            if (guess > number) {
+                answer = 'number is lower';
+            }
+            if (guess == number) {
+                answer = "you guessed right!";
+            }
+            updateview();
+        }
+
+        function getnumber(range) {
+            number = Math.ceil(Math.random() * range);
+        } 
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+    --- NUMBER GUESSER ---
+Lag et input hvor du kan skrive inn et tall, og en knapp man skal kunne trykke på for å få en beskjed på skjermen om tallet har en verdi som er:
+    høyere enn 5
+    tallet er lavere enn 5
+    AKKURAT 5, skal det komme en beskjed om at man har tippet riktig tall. 
+    
+Bytt så ut det hardkodede tallet 5 med et tilfeldig generert tall mellom 0 og 100
+ -->
+
