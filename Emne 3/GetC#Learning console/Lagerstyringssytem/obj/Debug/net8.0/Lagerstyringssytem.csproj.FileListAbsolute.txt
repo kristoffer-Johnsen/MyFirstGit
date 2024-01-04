@@ -1,0 +1,15 @@
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\bin\Debug\net8.0\Lagerstyringssytem.exe
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\bin\Debug\net8.0\Lagerstyringssytem.deps.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\bin\Debug\net8.0\Lagerstyringssytem.runtimeconfig.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\bin\Debug\net8.0\Lagerstyringssytem.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\bin\Debug\net8.0\Lagerstyringssytem.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.AssemblyInfoInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.AssemblyInfo.cs
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.sourcelink.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\refint\Lagerstyringssytem.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\Lagerstyringssytem.genruntimeconfig.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\Lagerstyringssytem\obj\Debug\net8.0\ref\Lagerstyringssytem.dll

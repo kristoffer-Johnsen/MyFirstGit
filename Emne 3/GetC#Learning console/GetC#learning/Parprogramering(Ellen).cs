@@ -81,7 +81,7 @@ namespace kodeSammenMedKristoffer
             {
                 Console.WriteLine("vil du gjøre noe mer? y/n");
 
-                char noeannet = Convert.ToChar(Console.ReadLine());
+                char noeannet = Convert.ToChar(Console.ReadLine()!);
                 char redigertsvar = ToLowercase(noeannet);
                 if (redigertsvar == 'y')
                 {
@@ -92,7 +92,7 @@ namespace kodeSammenMedKristoffer
             static void metode1(string? settning)
             {
                 string revSettning = "";
-                for (int i = settning.Length - 1;
+                for (int i = settning!.Length - 1;
                      i >= 0;
                      --i)
                 {
@@ -107,7 +107,7 @@ namespace kodeSammenMedKristoffer
             {
                 var LowerSettning = "";
                 for (int i = 0;
-                     i < settning.Length;
+                     i < settning!.Length;
                      i++)
                 {
                     char bokstav = ToLowercase(settning[i]);
@@ -122,7 +122,7 @@ namespace kodeSammenMedKristoffer
             {
                 var UpperSettning = "";
                 for (int i = 0;
-                     i < settning.Length;
+                     i < settning!.Length;
                      i++)
                 {
                     char bokstav = ToUppercase(settning[i]);

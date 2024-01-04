@@ -1,6 +1,5 @@
 ﻿namespace Emne3.Pokemon_game
 {
-
     internal class Pokemon
     {
         public static Random Rand = new Random();
@@ -20,7 +19,3 @@
         }
     }
 }
-
-
-
-

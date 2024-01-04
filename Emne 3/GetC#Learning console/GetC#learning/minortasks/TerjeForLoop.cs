@@ -1,13 +1,14 @@
 ﻿
-namespace Terje;
-
-internal class ErKul
+namespace Terje
 {
-    public static void checkcool()
+    internal class ErKul
     {
-        for (int i = 0; i < 5; i++)
+        public static void checkcool()
         {
-            Console.WriteLine("Terje er kul");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Terje er kul");
+            }
         }
     }
 }

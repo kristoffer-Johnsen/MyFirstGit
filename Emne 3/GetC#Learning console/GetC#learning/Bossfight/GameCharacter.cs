@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Emne3.Bossfight
 {
     class GameCharacter
     {
         private int _health { get; set; }
-
-        private readonly bool _strRandom;
-        private int _strength { get; }
+        
+        private bool _strRandom { get; }
+        private int _strength { get; set; }
 
         private int _MaxStamina { get; }
         private int _stamina { get; set; }
@@ -19,19 +14,22 @@ namespace Emne3.Bossfight
         public GameCharacter(int health, int stamina, int strength = -1)
         {
             _health = health;
-            _strRandom = (strength == -1);
-            _strength = (strength == -1) ? Rand() : strength;
+
+            _strRandom = strength == -1;
+            _strength = strength == -1 ? Rand() : strength;
+
+            _MaxStamina = stamina;
             _stamina = stamina;
+             
         }
 
 
-        private int Rand()
+        private int Rand() //int max = 31
         {
             Random rand = new Random();
             return rand.Next(0, 31);
+            //return rand.Next(0, max);
         }
-
-
 
         internal int Health()
         {
@@ -43,29 +41,42 @@ namespace Emne3.Bossfight
             return _strength;
         }
 
-        internal int Attack()
+        ///<summary>
+        ///<param name="rndStrength">Should the attack have a random strength?</param>
+        ///<param name="rndStrength">What should the maximum value of the random strength be?</param>
+        ///</summary>
+        internal int Attack() //bool rndStrength = false, int maxHit = 31
         {
+            if (_stamina <= 0)
+            {
+                Recharge();
+                return -1;
+            }
+
             if (_strRandom)
             {
-                Rand();
+                _strength = Rand();
             }
+
+            //if (rndStrength)
+            //{
+            //    _strength = Rand(maxHit);
+            //}
 
             if (_stamina > 0)
             {
-                _stamina = -10;
+                _stamina -= 10;
                 return _strength;
             }
-
-            recharge();
             return -1;
         }
 
         internal void TakeDamage(int strength)
         {
-            _health = -strength;
+            _health -= strength;
         }
 
-        private void recharge()
+        private void Recharge()
         {
             _stamina = _MaxStamina;
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj": {}
+    "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj": {
+    "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj",
+        "projectUniqueName": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj",
         "projectName": "codealong",
-        "projectPath": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj",
+        "projectPath": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\codealong\\codealong.csproj",
         "packagesPath": "C:\\Users\\kris_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\codealong\\obj\\",
+        "outputPath": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\codealong\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

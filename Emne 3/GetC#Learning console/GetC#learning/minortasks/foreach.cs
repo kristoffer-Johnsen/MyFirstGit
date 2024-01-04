@@ -1,24 +1,25 @@
 ﻿
-namespace ForEachTask;
-
-internal class RunTask
+namespace ForEachTask
 {
-    public static void LoopTask()
+    internal class RunTask
     {
-        string Sentence = "bokstaver i en string";
-        Console.WriteLine("first foreach \n");
-        foreach (char Letters in Sentence)
+        public static void LoopTask()
         {
-            Console.Write(Letters);
-        }
+            string Sentence = "bokstaver i en string";
+            Console.WriteLine("first foreach \n");
+            foreach (char Letters in Sentence)
+            {
+                Console.Write(Letters);
+            }
 
-        Console.WriteLine("\n\nsecond foreach");
+            Console.WriteLine("\n\nsecond foreach");
 
-        string[] ArraySentence = new[] { "ord", "i", "et", "array" };
+            string[] ArraySentence = new[] { "ord", "i", "et", "array" };
 
-        foreach (string word in ArraySentence)
-        {
-            Console.WriteLine(word);
+            foreach (string word in ArraySentence)
+            {
+                Console.WriteLine(word);
+            }
         }
     }
 }

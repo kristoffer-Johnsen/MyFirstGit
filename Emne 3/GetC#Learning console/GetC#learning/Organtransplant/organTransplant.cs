@@ -70,9 +70,9 @@ namespace Emne3.Organtransplant
         }
 
     }
-
-
 }
+
+
 // Oppgave: Organ transplant!
 // Det har vært en akutt ulykke og Bernt ligger på sykehuset.
 // 

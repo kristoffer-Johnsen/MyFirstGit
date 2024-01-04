@@ -5,7 +5,11 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emne3console", "Emne3console.csproj", "{8517BC31-D5D5-470C-848A-1107860BDC96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "codealong", "..\codealong\codealong.csproj", "{9FCF28F4-21D7-4F70-9DF0-C97F20A14326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "codealong", "..\codealong\codealong.csproj", "{9FCF28F4-21D7-4F70-9DF0-C97F20A14326}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lagerstyringssytem", "..\Lagerstyringssytem\Lagerstyringssytem.csproj", "{D73DF960-DCB4-43E5-8632-9B92205EE046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbaxRekruttering", "..\AbraxRekruttering\AbaxRekruttering.csproj", "{BC958E38-6F26-46A4-86F6-C8593438A266}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{9FCF28F4-21D7-4F70-9DF0-C97F20A14326}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FCF28F4-21D7-4F70-9DF0-C97F20A14326}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FCF28F4-21D7-4F70-9DF0-C97F20A14326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D73DF960-DCB4-43E5-8632-9B92205EE046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73DF960-DCB4-43E5-8632-9B92205EE046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73DF960-DCB4-43E5-8632-9B92205EE046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73DF960-DCB4-43E5-8632-9B92205EE046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC958E38-6F26-46A4-86F6-C8593438A266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC958E38-6F26-46A4-86F6-C8593438A266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC958E38-6F26-46A4-86F6-C8593438A266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC958E38-6F26-46A4-86F6-C8593438A266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

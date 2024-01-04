@@ -140,21 +140,21 @@
         //--------------------------- namelist for enemy team--------------------------------------------//
         internal static string Namelist()
         { 
-           int randomname = Pokemon.Rand.Next(0,10);
+            int randomname = Pokemon.Rand.Next(0,10);
 
-           List<string> names = new List<string>
-           {
-               "Alice",
-               "Bob",
-               "Charlie",
-               "David",
-               "Eva",
-               "Frank",
-               "Grace",
-               "Henry",
-               "Ivy",
-               "Jack"
-           };
+            List<string> names = new List<string>
+            {
+                "Alice",
+                "Bob",
+                "Charlie",
+                "David",
+                "Eva",
+                "Frank",
+                "Grace",
+                "Henry",
+                "Ivy",
+                "Jack"
+            };
 
             return names[randomname];
         }

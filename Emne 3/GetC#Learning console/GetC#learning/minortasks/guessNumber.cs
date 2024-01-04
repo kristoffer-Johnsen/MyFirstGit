@@ -1,56 +1,58 @@
-﻿namespace GuessNumber;
-
-public class GetNumber
+﻿namespace GuessNumber
 {
-    public static void NumberGuesser()
+    public class GetNumber
     {
-        Console.WriteLine("guess my number 1-10");
 
-        int secretNumber = GetRandomNumber(1, 10);
-
-        var answer = Convert.ToInt16(Console.ReadLine());
-
-        CheckAnswer(secretNumber, answer);
-
-    }
-
-    public static int GetRandomNumber(int min, int max)
-    {
-        return new Random().Next(min, max);
-    }
-
-    public static void CheckAnswer(int secretNumber, short answer)
-    {
-        if (answer > secretNumber)
+        public static void NumberGuesser()
         {
-            Console.WriteLine("The Number is lower");
+            Console.WriteLine("guess my number 1-10");
+
+            int secretNumber = GetRandomNumber(1, 10);
+
+            var answer = Convert.ToInt16(Console.ReadLine());
+
+            CheckAnswer(secretNumber, answer);
+
         }
 
-        else if (answer < secretNumber)
+        public static int GetRandomNumber(int min, int max)
         {
-            Console.WriteLine("The number is higher");
+            return new Random().Next(min, max);
         }
 
-        else if (answer == secretNumber)
+        public static void CheckAnswer(int secretNumber, short answer)
         {
-            Console.WriteLine("you Are correct");
-
-            Console.WriteLine("would you like go again? Y/N");
-            string startover = Console.ReadLine();
-
-            if (startover.ToLower() == "y")
+            if (answer > secretNumber)
             {
-                GetRandomNumber(1, 10);
-                Console.WriteLine("new number chosen");
+                Console.WriteLine("The Number is lower");
             }
-            else
+
+            else if (answer < secretNumber)
             {
-                return;
+                Console.WriteLine("The number is higher");
             }
+
+            else if (answer == secretNumber)
+            {
+                Console.WriteLine("you Are correct");
+
+                Console.WriteLine("would you like go again? Y/N");
+                string startover = Console.ReadLine()!;
+
+                if (startover.ToLower() == "y")
+                {
+                    GetRandomNumber(1, 10);
+                    Console.WriteLine("new number chosen");
+                }
+                else
+                {
+                    return;
+                }
+            }
+            answer = Convert.ToInt16(Console.ReadLine());
+            CheckAnswer(secretNumber, answer);
         }
-        answer = Convert.ToInt16(Console.ReadLine());
-        CheckAnswer(secretNumber, answer);
+
+
     }
-
-
 }

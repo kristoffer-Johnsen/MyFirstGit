@@ -1,30 +1,69 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using System.Net.Http.Headers;
 
 namespace Emne3.Bossfight
 {
     internal class BossFight
     {
+        //creating the characters
         static GameCharacter Hero = new(100, 40, 20);
-        static GameCharacter Boss = new(100, 20);
+        static GameCharacter Boss = new(200, 10);
         internal static void Start()
         {
-            //start og simulation pause//
+            //clearing and starting
             Console.Clear();
             Console.SetCursorPosition(0, 3);
 
             Console.WriteLine("this is a simulation of a Bossfight");
             Console.ReadLine();
 
+            //starting the simulation
             Console.Clear();
             Console.SetCursorPosition(0, 3);
 
-            //creation of Hero and boss for simulation
+            //showing of Hero and boss for simulation
+            ShowCharacters();
+
+            //pause to read stats
+            Console.ReadLine();
+
+            //clearing to keep the console readable
+            Console.Clear();
+            Console.SetCursorPosition(0, 3);
+
+            //the fight
+            while (Hero.Health() > 0 && Boss.Health() > 0)
+            {
+                Console.Clear();
+                Console.SetCursorPosition(0, 3);
+
+                var (hero, boss) = Fight();
+
+                //to better se the change i added a sligt sleep
+                Thread.Sleep(200);
+
+                //showing the result of the bout   
+                ShowCharacters();
+                ItterationResult(hero, boss);
+
+                //just a small pause       
+                Console.WriteLine("\n\n\npress enter to continue");
+                Console.ReadLine();
+            }
+            //clearing console to announce winner
+            Console.Clear();
+            Console.SetCursorPosition(0, 3);
+
+            //anouncing winner
+            Winner();
 
 
+            Console.ReadLine();
+        }
+
+        private static void ShowCharacters()
+        {
             var (HeroHealth, HeroStamina, HeroStrength, HerostrRandom) = Hero.show();
             var (BossHealth, BossStamina, BossStrength, BossStrRandom) = Boss.show();
             Console.WriteLine($"Hero\n" +
@@ -38,58 +77,32 @@ namespace Emne3.Bossfight
                               $"Stamina:        {BossStamina}\n" +
                               $"Strength:       {BossStrength}\n" +
                               $"Random damage?  {BossStrRandom}\n");
-            //pause to read
-            Console.ReadLine();
-            Console.Clear();
-            Console.SetCursorPosition(0, 3);
-
-            while (Hero.Health() > 0 || Boss.Health() > 0)
-            {
-                var(hero,boss) = Fight();
-                IntervalResult(hero, boss);
-                Console.ReadLine();
-            }
-
-            Console.Clear();
-            Console.SetCursorPosition(0, 3);
-
-            Winner();
-
-            Console.ReadLine();
         }
 
         private static void Winner()
         {
-           int result = determinewinner();
+            int result = determinewinner();
 
-           string winner = result switch
-           {
-               1 => "the Hero Dies, and the Boss continues his bossing",
-               2 => "Victory! the hero Has Slain the Boss",
-               3 => "the world continued without both the Hero and the Boss",
-               _ => throw new ArgumentOutOfRangeException()
-           };
+            string winner = result switch
+            {
+                1 => "the Hero Dies, and the Boss continues his bossing, the people was not amused",
+                2 => "Victory! the hero Has Slain the Boss, the people did not care",
+                3 => "The Hero and the Boss both died, and the people cheered",
+                _ => @" ¯\_(ツ)_/¯ "
+            };
 
-           Console.WriteLine($"{winner}");
+            Console.WriteLine($"{winner}");
 
         }
 
         private static int determinewinner()
         {
-            if (Hero.Health() < 0 && Boss.Health() > 0)
-            {
-                return 1;
-            }
-            if (Hero.Health() > 0 && Boss.Health() < 0)
-            {
-                return 2;
-            }
-
-            if (Hero.Health() < 0 && Boss.Health() < 0)
-            {
-                return 3;
-            }
-
+            var heroHealth = Hero.Health();
+            var bossHealth = Boss.Health();
+            if (heroHealth <= 0 && bossHealth > 0) return 1;
+            if (heroHealth > 0 && bossHealth <= 0) return 2;
+            if (heroHealth <= 0 && bossHealth <= 0) return 3;
+            
             return default;
         }
 
@@ -98,7 +111,7 @@ namespace Emne3.Bossfight
             bool hero;
             bool boss;
             var HeroAttack = Hero.Attack();
-            var BossAttack = Boss.Attack();
+            var BossAttack = Boss.Attack(); //true, 31
 
             if (HeroAttack == -1)
             {
@@ -117,32 +130,20 @@ namespace Emne3.Bossfight
             else
             {
                 boss = true;
-                Hero.TakeDamage(HeroAttack);
+                Hero.TakeDamage(BossAttack);
             }
-            return (hero,boss);
+            return (hero, boss);
         }
 
-        private static void IntervalResult(bool hero, bool boss)
+        private static void ItterationResult(bool hero, bool boss)
         {
-            if (hero)
-            {
-                Console.WriteLine($"the Hero attacked and did {Hero.Damage()} Damage!\n");  
-            }
-            else
-            {
-                Console.WriteLine("the Hero decided to recharge his stamina");
-            }
+            if (hero) Console.WriteLine($"the Hero attacked and did {Hero.Damage()} Damage!\n");
+            else Console.WriteLine("the Hero decided to recharge his stamina");
 
-            if (boss)
-            {
-                Console.WriteLine($"Boss: attacked and did {Boss.Damage()} Damage!\n");
-            }
-            else
-            {
-                Console.WriteLine("the Boss decided to recharge his stamina");
-            }
+            if (boss) Console.WriteLine($"Boss: attacked and did {Boss.Damage()} Damage!\n");
+            else Console.WriteLine("the Boss decided to recharge his stamina");
+            
         }
-
     }
 }
 //Dere skal lage en konsoll app som viser en battle mellom en hero og en boss.

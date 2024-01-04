@@ -3,10 +3,8 @@
 
 namespace Emne3
 {
-
     //all this is just a test file, i dont need all the warnings//
-
-                #pragma warning disable
+#pragma warning disable
 
     internal class interfaceExample
     {
@@ -59,6 +57,5 @@ namespace Emne3
             public string SpecialAttack { get; set; }
         }
     }
-                        #pragma warning restore
-
+#pragma warning restore
 }

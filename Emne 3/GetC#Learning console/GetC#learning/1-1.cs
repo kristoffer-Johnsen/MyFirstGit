@@ -57,6 +57,3 @@ namespace Emne3
         F
     }
 }
-
-
-

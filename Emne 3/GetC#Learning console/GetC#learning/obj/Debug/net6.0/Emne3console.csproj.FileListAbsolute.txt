@@ -41,3 +41,18 @@ C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\G
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.genruntimeconfig.cache
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\ref\Emne3console.dll
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.sourcelink.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.exe
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.deps.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.runtimeconfig.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\bin\Debug\net6.0\Emne3console.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfoInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.AssemblyInfo.cs
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.sourcelink.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\refint\Emne3console.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\Emne3console.genruntimeconfig.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\GetC#learning\obj\Debug\net6.0\ref\Emne3console.dll

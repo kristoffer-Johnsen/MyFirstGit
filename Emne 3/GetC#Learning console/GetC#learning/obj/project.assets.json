@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\GetC#learning\\Emne3console.csproj",
+      "projectUniqueName": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\GetC#learning\\Emne3console.csproj",
       "projectName": "Emne3console",
-      "projectPath": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\GetC#learning\\Emne3console.csproj",
+      "projectPath": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\GetC#learning\\Emne3console.csproj",
       "packagesPath": "C:\\Users\\kris_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kris_\\OneDrive\\Desktop\\Repo\\soloprojects\\Emne 3\\GetC#Learning console\\GetC#learning\\obj\\",
+      "outputPath": "D:\\Program Files (x86)\\MyFirstGit\\Emne 3\\GetC#Learning console\\GetC#learning\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

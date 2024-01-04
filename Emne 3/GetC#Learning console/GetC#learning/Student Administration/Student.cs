@@ -32,5 +32,5 @@
     }
 }
 
-       // Egenskaper: Navn, Alder, Studieprogram, StudentID.
+// Egenskaper: Navn, Alder, Studieprogram, StudentID.
        // Metode: SkrivUtInfo() som skriver ut informasjon om studenten.

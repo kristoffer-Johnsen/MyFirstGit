@@ -1,38 +1,39 @@
 ﻿
-namespace findcodefunction;
-
-internal class TestThisCode
+namespace findcodefunction
 {
-    public static void testcode()
+    internal class TestThisCode
     {
-
-        var range = 250;
-        var counts = new int[range];
-        string text = "something";
-        while (!string.IsNullOrWhiteSpace(text))
+        public static void testcode()
         {
-            text = Console.ReadLine()?.ToLower();
-            foreach (var character in text ?? string.Empty)
-            {
-                counts[(int)character]++;
-            }
-            for (var i = 0; i<range; i++)
-            {
-                if (counts[i] > 0)
-                {
-                    int percentage = 100 * counts[i] / text.Length;
 
-                    var character = (char)i;
-                    Console.WriteLine(character + " - " + percentage + "%");
+            var range = 250;
+            var counts = new int[range];
+            string text = "something";
+            while (!string.IsNullOrWhiteSpace(text))
+            {
+                text = Console.ReadLine()?.ToLower()!;
+                foreach (var character in text ?? string.Empty)
+                {
+                    counts[(int)character]++;
+                }
+                for (var i = 0; i<range; i++)
+                {
+                    if (counts[i] > 0)
+                    {
+                        int percentage = 100 * counts[i] / text!.Length;
+
+                        var character = (char)i;
+                        Console.WriteLine(character + " - " + percentage + "%");
                     
-                    string output = character + " - " + percentage.ToString("F2") + "%";
-                    Console.CursorLeft = Console.BufferWidth - output.Length - 1;
-                    Console.WriteLine(output);
+                        string output = character + " - " + percentage.ToString("F2") + "%";
+                        Console.CursorLeft = Console.BufferWidth - output.Length - 1;
+                        Console.WriteLine(output);
+                    }
                 }
             }
         }
-    }
 
+    }
 }
 /*  task 1: copy paste this task into visual studio
  * 

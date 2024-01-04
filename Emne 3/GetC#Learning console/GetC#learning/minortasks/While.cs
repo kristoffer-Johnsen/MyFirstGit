@@ -1,16 +1,17 @@
 ﻿
-namespace WhileLoopTask;
-
-internal class Loop
+namespace WhileLoopTask
 {
-    public static void WhileTask()
+    internal class Loop
     {
-        int number = 1;
-        while (number<=10)
+        public static void WhileTask()
         {
-            Console.WriteLine($"this is round: {number}");
-            number++;
+            int number = 1;
+            while (number<=10)
+            {
+                Console.WriteLine($"this is round: {number}");
+                number++;
 
+            }
         }
     }
 }

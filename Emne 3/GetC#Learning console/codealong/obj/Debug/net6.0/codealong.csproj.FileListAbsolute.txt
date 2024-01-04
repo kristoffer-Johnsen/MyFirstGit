@@ -12,3 +12,18 @@ C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\c
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.pdb
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.genruntimeconfig.cache
 C:\Users\kris_\OneDrive\Desktop\Repo\soloprojects\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\ref\codealong.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.exe
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.deps.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.runtimeconfig.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\bin\Debug\net6.0\codealong.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.GeneratedMSBuildEditorConfig.editorconfig
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.AssemblyInfoInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.AssemblyInfo.cs
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.sourcelink.json
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\refint\codealong.dll
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.pdb
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\codealong.genruntimeconfig.cache
+D:\Program Files (x86)\MyFirstGit\Emne 3\GetC#Learning console\codealong\obj\Debug\net6.0\ref\codealong.dll

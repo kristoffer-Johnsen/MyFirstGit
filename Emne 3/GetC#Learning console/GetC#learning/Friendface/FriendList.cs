@@ -7,7 +7,7 @@ namespace Emne3.Friendface
 
         internal void Addf(User NewFriend)
         {
-        _list.Add(NewFriend);
+            _list.Add(NewFriend);
         }
 
         internal void Remove(User Friend)

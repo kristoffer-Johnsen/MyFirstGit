@@ -32,7 +32,7 @@ namespace Emne3.Friendface
 
         internal void Removefriend(User Friend)
         {
-           _friends.Remove(Friend);
+            _friends.Remove(Friend);
         }
 
         internal void ShowFriends()

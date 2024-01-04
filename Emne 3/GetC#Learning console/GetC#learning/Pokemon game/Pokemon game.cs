@@ -68,7 +68,7 @@ namespace Emne3.Pokemon_game
 
                 var enemyTeam = team.ToArray();
 
-            //-------------------------- combat starts (its own class)-----------------------//
+                //-------------------------- combat starts (its own class)-----------------------//
 
                 Pokemon_Combat.runcombat(enemyTeam, solidTeam);
             }
